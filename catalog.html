@@ -24,14 +24,17 @@
 		<link rel="stylesheet" href="css/catalog.css" />
 		<!-- Scripts -->
 		<script src="./js/libs/swiper.boundle.min.js" defer></script>
-		<script src="./js/catalog.js" defer type="module"></script>
 	</head>
 
 	<body>
 		<div class="banner">
-			<h3 class="banner__title">Free delivery from $60 and free returns</h3>
+			<h2 class="banner__title">Free delivery from $60 and free returns</h2>
 			<button class="banner__close">
-				<img class="banner__close-img" src="./img/catalog/close-white.png" />
+				<img
+					class="banner__close-img"
+					src="./img/catalog/close-white.png"
+					alt="close banner"
+				/>
 			</button>
 		</div>
 		<header class="header">
@@ -56,7 +59,9 @@
 							<a href="index.html" class="main-link nav__link">Home</a>
 						</li>
 						<li class="nav__item">
-							<a href="catalog.html" class="main-link nav__link--current"
+							<a
+								href="catalog.html"
+								class="main-link nav__link nav__link--current"
 								>Shop</a
 							>
 						</li>
@@ -137,9 +142,9 @@
 						<div class="swiper-wrapper">
 							<div class="swiper-slide">
 								<div class="catalog-slide">
-									<h2 class="catalog-slide__title">
+									<h1 class="catalog-slide__title">
 										The best thing about going back to school?
-									</h2>
+									</h1>
 									<p class="catalog-slide__descr">
 										This fall denim is king! Denim is officially back in and
 										cool to wear in all its many forms
@@ -161,7 +166,7 @@
 				</div>
 			</section>
 			<!-- /.hero -->
-			<section class="breadcrumbs">
+			<div class="breadcrumbs">
 				<div class="container-shared">
 					<nav class="breadcrumbs__nav">
 						<ul class="breadcrumbs__list">
@@ -179,7 +184,7 @@
 						</ul>
 					</nav>
 				</div>
-			</section>
+			</div>
 			<!-- /.breadcrumbs -->
 			<section class="stock">
 				<div class="container-shared">
@@ -188,16 +193,20 @@
 							<div class="filter__header">
 								<button class="filter__header-btn">Hide Filters</button>
 								<button class="filter__header-btn--close">
-									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+										<path
+											d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"
+										/>
+									</svg>
 								</button>
 							</div>
 							<div class="filter__wrapper">
 								<div class="filter__tab filter__tab--open">
 									<div class="filter__tab-header">
 										<div class="filter__tab-caption">
-											<h3 class="filter__tab-title" data-tab="Categories">
+											<h2 class="filter__tab-title" data-tab="Categories">
 												Categories
-											</h3>
+											</h2>
 											<span class="filter__tab-counter">0</span>
 										</div>
 										<span class="filter__tab-switch"></span>
@@ -307,7 +316,7 @@
 								<div class="filter__tab">
 									<div class="filter__tab-header">
 										<div class="filter__tab-caption">
-											<h3 class="filter__tab-title" data-tab="Color">Color</h3>
+											<h2 class="filter__tab-title" data-tab="Color">Color</h2>
 											<span class="filter__tab-counter">0</span>
 										</div>
 										<span class="filter__tab-switch"></span>
@@ -427,7 +436,7 @@
 									<span>Filters</span>
 								</button>
 								<div class="catalog__header-columns catalog__columns">
-									<h4 class="catalog__columns-title">Column number:</h4>
+									<h3 class="catalog__columns-title">Column number:</h2>
 									<ul class="catalog__columns-list">
 										<li class="catalog__columns-item">
 											<button
@@ -617,9 +626,9 @@
 					</div>
 				</div>
 				<div class="footer__bottom">
-					<h3 class="footer__bottom-copyright">
+					<h2 class="footer__bottom-copyright">
 						©2019 Zonex All rights reserved
-					</h3>
+					</h2>
 					<img
 						class="footer__bottom-pay"
 						src="img/catalog/payment.png"
@@ -644,5 +653,7 @@
 				</g>
 			</svg>
 		</a>
+
+		<script src="./js/catalog.js" type="module"></script>
 	</body>
 </html>
