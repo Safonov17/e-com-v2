@@ -1,0 +1,97 @@
+.products {
+	> .container {
+		padding-top: 55px;
+		padding-bottom: 55px;
+
+		@include md-min {
+			padding-bottom: 40px;
+		}
+		@include sm {
+			padding-top: 35px;
+			padding-bottom: 35px;
+		}
+	}
+	// products__nav
+	&__nav {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 40px;
+		margin-bottom: 50px;
+		// products__nav-btn
+		&-btn {
+			font-size: 24px;
+			color: $color-gray;
+			// products__nav-btn--current
+			&--current {
+				cursor: default;
+				color: $color-dark;
+
+				&::before {
+					width: 100%;
+				}
+			}
+
+			@include sm {
+				font-size: 18px;
+			}
+		}
+		@include xs {
+			margin-bottom: 30px;
+		}
+	}
+	// products__list
+	&__list {
+		display: grid;
+		grid-template-columns: repeat(5, 1fr);
+		justify-items: center;
+		column-gap: 30px;
+		row-gap: 58px;
+
+		@include md {
+			grid-template-columns: repeat(4, 1fr);
+			column-gap: 20px;
+			row-gap: 50px;
+		}
+		@include sm {
+			grid-template-columns: repeat(3, 1fr);
+			column-gap: 20px;
+			row-gap: 35px;
+		}
+		@include xs {
+			grid-template-columns: repeat(2, 1fr);
+			column-gap: 10px;
+			row-gap: 17px;
+		}
+	}
+	// products__more
+	&__more {
+		text-align: center;
+		margin-top: 73px;
+
+		@include md-min {
+			margin-top: 50px;
+		}
+		// products__more-btn
+		&-btn {
+			display: inline-flex;
+			flex-direction: column;
+			align-items: center;
+			font-size: 13px;
+			color: $color-gray;
+			span {
+				margin-bottom: 12px;
+			}
+			img {
+				width: 12px;
+				height: 21px;
+				transition: transform 0.3s;
+			}
+			&:hover {
+				img {
+					transform: translateY(5px);
+				}
+			}
+		}
+	}
+}

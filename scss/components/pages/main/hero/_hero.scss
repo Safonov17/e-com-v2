@@ -1,0 +1,88 @@
+.hero {
+	position: relative;
+	height: 100vh;
+	min-height: 700px;
+	background-color: $color-bg;
+
+	&::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background-color: rgba($color: #000000, $alpha: 0.05);
+	}
+
+	> .container {
+		position: relative;
+		height: 100%;
+	}
+	// hero__title
+	&__title {
+		max-width: 560px;
+		font-size: 72px;
+		line-height: 1.2;
+		font-weight: 700;
+		color: $color-dark;
+		margin-bottom: 47px;
+
+		@include md {
+			max-width: 430px;
+			font-size: 62px;
+		}
+		@include sm {
+			max-width: 220px;
+			font-size: 45px;
+		}
+	}
+	// hero__descr
+	&__descr {
+		font-size: 18px;
+		line-height: 1.2;
+		color: $color-dark;
+
+		@include md {
+			max-width: 250px;
+		}
+	}
+	// hero__image
+	&__image {
+		position: absolute;
+		right: 24%;
+		bottom: 0;
+		max-height: 90%;
+		z-index: -1;
+
+		@include lg {
+			right: 7%;
+		}
+		@include sm {
+			right: 0;
+		}
+		@include xs {
+			display: none;
+		}
+	}
+	// hero__content
+	&__content {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: center;
+		padding: 0 260px;
+		height: 100%;
+
+		@include lg {
+			padding: 0 100px;
+		}
+		@include md-min {
+			padding: 0;
+		}
+	}
+
+	// media for hero section
+	@include md {
+		min-height: min-content;
+	}
+}

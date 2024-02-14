@@ -1,0 +1,10 @@
+import './components/catalog/banner.js'
+import './components/catalog/slider.js'
+import './components/catalog/filter.js'
+import './components/catalog/select.js'
+import './components/catalog/grid-columns.js'
+import './components/catalog/show-catalog.js'
+import './components/catalog/filter-mobile.js'
+import './ui/burger.js'
+import './ui/to-top.js'
+import './ui/empty-links.js' // удалить

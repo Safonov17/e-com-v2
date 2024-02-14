@@ -1,0 +1,28 @@
+@import './base/vars';
+@import './base/fonts';
+@import './base/reset';
+@import './mixins/breakpoints';
+@import './base/base';
+
+// ui
+@import './ui/burger-menu';
+
+// Components (main)
+@import './components/pages/main/header/header';
+@import './components/pages/main/header/nav';
+@import './components/pages/main/header/shop';
+
+@import './components/pages/main/hero/hero';
+@import './components/pages/main/sliders/banner-slider';
+@import './components/pages/main/hero/popup';
+
+@import './components/pages/main/promo/promo';
+
+@import './components/pages/main/products/products';
+@import './components/pages/main/products/product-item';
+
+@import './components/pages/main/posters/posters';
+
+@import './components/pages/main/footer/footer';
+@import './components/pages/main/footer/subscribe';
+@import './components/pages/main/footer/footer-bottom';

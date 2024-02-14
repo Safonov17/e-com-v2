@@ -1,0 +1,40 @@
+.footer {
+	// .footer__column
+	&__column {
+		// .footer__column-subtitle
+		&-subtitle {
+			font-size: 13px;
+			color: $color-footer-item;
+			margin-bottom: 27px;
+		}
+		// .footer__column-subscribe
+		&-subscribe {
+			position: relative;
+			> input {
+				width: 100%;
+				padding-top: 13px;
+				padding-bottom: 13px;
+				padding-right: 75px;
+				border-bottom: 2px solid $color-dark;
+				background-color: transparent;
+				::placeholder {
+					font-size: 13px;
+					color: $color-footer-item;
+				}
+			}
+			> button {
+				position: absolute;
+				right: 0;
+				top: 50%;
+				transform: translateY(-50%);
+			}
+		}
+
+		> span {
+			display: block;
+			font-size: 13px;
+			color: $color-footer-item;
+			margin-top: 24px;
+		}
+	}
+}

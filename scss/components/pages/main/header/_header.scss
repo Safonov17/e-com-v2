@@ -1,0 +1,43 @@
+.header {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	z-index: 100;
+	> .container {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding-top: 34px;
+		padding-bottom: 34px;
+		@include md {
+			position: relative;
+		}
+	}
+	// .header__logo
+	&__logo {
+		@include md {
+			position: absolute;
+			right: 50%;
+			top: 50%;
+			transform: translate(50%, -50%);
+		}
+		@include xs {
+			right: 15px;
+			transform: translate(0, -50%);
+		}
+	}
+	// .header__shop
+	&__shop {
+		margin-left: 250px;
+
+		@include md {
+			margin-left: 0;
+		}
+		@include xs {
+			position: fixed;
+			bottom: 20px;
+			left: 20px;
+		}
+	}
+}

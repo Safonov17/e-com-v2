@@ -1,0 +1,21 @@
+.stock {
+	// .stock__wrapper
+	&__wrapper {
+		display: grid;
+		grid-template-columns: 244px 1fr;
+		gap: 96px;
+		margin-bottom: 100px;
+
+		@include md {
+			gap: 50px;
+			margin-bottom: 70px;
+		}
+		@include sm {
+			grid-template-columns: 1fr;
+		}
+	}
+
+	@include sm {
+		position: relative;
+	}
+}

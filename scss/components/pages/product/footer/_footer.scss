@@ -1,0 +1,17 @@
+@import '../../catalog/footer/footer';
+@import '../../catalog/footer/custom-select';
+
+.footer {
+	&__top {
+		@include xs {
+			align-items: center;
+		}
+	}
+	&__column {
+		&--dropdown {
+			@include xs {
+				align-items: center;
+			}
+		}
+	}
+}

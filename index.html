@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Zonex</title>
+		<link rel="icon" href="favicon.ico" />
+		<!-- Preload fonts -->
+		<link
+			as="style"
+			rel="stylesheet preload prefetch"
+			href="./fonts/Jost-Medium.woff2"
+			crossorigin="anonymous"
+		/>
+		<link
+			as="style"
+			rel="stylesheet preload prefetch"
+			href="./fonts/Jost-Bold.woff2"
+			crossorigin="anonymous"
+		/>
+		<!-- Styles -->
+		<link rel="stylesheet" href="css/swiper.boundle.min.css" />
+		<link rel="stylesheet" href="css/normalize.css" />
+		<link rel="stylesheet" href="css/main.css" />
+		<!-- Scripts -->
+		<script src="./js/libs/swiper.boundle.min.js" defer></script>
+		<script src="./js/main.js" defer type="module"></script>
+	</head>
+
+	<body>
+		<header class="header">
+			<div class="container">
+				<button class="burger header__burger">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+						<path
+							d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
+						/>
+					</svg>
+				</button>
+				<nav class="nav header__nav">
+					<button class="nav__close-btn">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+							<path
+								d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"
+							/>
+						</svg>
+					</button>
+					<ul class="nav__list">
+						<li class="nav__item">
+							<a href="index.html" class="main-link nav__link--current">Home</a>
+						</li>
+						<li class="nav__item">
+							<a href="catalog.html" class="main-link nav__link">Shop</a>
+						</li>
+						<li class="nav__item">
+							<a class="main-link nav__link nav__link">Elements</a>
+						</li>
+						<li class="nav__item">
+							<a href="#" class="main-link nav__link">Blog</a>
+						</li>
+						<li class="nav__item">
+							<a href="#" class="main-link nav__link">Page</a>
+						</li>
+					</ul>
+				</nav>
+				<a href="index.html" class="header__logo" aria-label="logo">
+					<img src="./img/header/logo.png" alt="Logo" />
+				</a>
+				<ul class="shop header__shop">
+					<li class="shop__item">
+						<form class="shop__search-form search-form">
+							<button class="search-form__btn" aria-label="search">
+								<img src="./img/header/search.png" alt="search" />
+							</button>
+						</form>
+					</li>
+					<li class="shop__item">
+						<a href="#" class="shop__link" aria-label="go to log in">
+							<img src="./img/header/user.png" alt="User" />
+						</a>
+					</li>
+					<li class="shop__item">
+						<a href="#" class="shop__link cart" aria-label="go to cart">
+							<img src="./img/header/cart.png" alt="Cart" />
+						</a>
+						<span class="shop__quantity">3</span>
+					</li>
+				</ul>
+			</div>
+		</header>
+		<main>
+			<section class="hero">
+				<div class="container">
+					<h1 class="visually-hidden">Zonex - the best shop!</h1>
+					<div class="banner-slider">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<div class="hero__content">
+									<h2 class="hero__title">Fall-Winter Clearance Sales</h2>
+									<p class="hero__descr">
+										All Sale Items are Final Sale / Free Shipping on All Orders
+									</p>
+									<img
+										src="./img/hero/girl.png"
+										class="hero__image"
+										alt="Girl"
+										aria-hidden="true"
+									/>
+								</div>
+							</div>
+							<!-- ./slide -->
+							<div class="swiper-slide">
+								<div class="hero__content">
+									<h2 class="hero__title">Fall-Winter Clearance Sales</h2>
+									<p class="hero__descr">
+										All Sale Items are Final Sale / Free Shipping on All Orders
+									</p>
+									<img
+										src="./img/hero/girl.png"
+										class="hero__image"
+										alt="Girl"
+										aria-hidden="true"
+									/>
+								</div>
+							</div>
+							<!-- ./slide -->
+							<div class="swiper-slide">
+								<div class="hero__content">
+									<h2 class="hero__title">Fall-Winter Clearance Sales</h2>
+									<p class="hero__descr">
+										All Sale Items are Final Sale / Free Shipping on All Orders
+									</p>
+									<img
+										src="./img/hero/girl.png"
+										class="hero__image"
+										alt="Girl"
+										aria-hidden="true"
+									/>
+								</div>
+							</div>
+							<!-- ./slide -->
+						</div>
+						<div class="banner-pagination"></div>
+					</div>
+					<div class="hero__popup">
+						<div class="hero__popup-img">
+							<img src="./img/hero/product-image.jpg" alt="Coat" />
+						</div>
+						<div class="hero__popup-content">
+							<span class="hero__popup-subtitle">Someone purchaed a</span>
+							<h3 class="hero__popup-title">
+								Faux shearling double-breasted coat
+							</h3>
+							<span class="hero__popup-descr"
+								>15 minutes ago London, Great Britain</span
+							>
+							<button
+								class="hero__popup-close"
+								aria-label="Close pop-up"
+							></button>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="promo">
+				<h2 class="visually-hidden">Promo</h2>
+				<div class="container">
+					<ul class="promo__list"></ul>
+				</div>
+			</section>
+			<section class="products">
+				<h2 class="visually-hidden">Products</h2>
+				<div class="container">
+					<ul class="products__nav">
+						<li class="products__nav-item">
+							<button
+								class="products__nav-btn main-link products__nav-btn--current"
+								data-tab="best-sellers"
+							>
+								Best Sellers
+							</button>
+						</li>
+						<li class="products__nav-item">
+							<button
+								class="products__nav-btn main-link"
+								data-tab="new=products"
+							>
+								New Products
+							</button>
+						</li>
+						<li class="products__nav-item">
+							<button
+								class="products__nav-btn main-link"
+								data-tab="sale-products"
+							>
+								Sale Products
+							</button>
+						</li>
+					</ul>
+					<ul class="products__list"></ul>
+					<div class="products__more">
+						<button class="products__more-btn">
+							<span>Load More</span>
+							<img src="./img/product/down-arrow.svg" alt="Arrow down" />
+						</button>
+					</div>
+				</div>
+			</section>
+			<section class="posters">
+				<div class="posters__wrapper">
+					<a href="#" class="posters__item">
+						<h3 class="posters__title">Men’s Sportswear</h3>
+						<span class="posters__link main-link">Read more</span>
+					</a>
+					<a href="product.html" class="posters__item">
+						<h3 class="posters__title">Find your fit</h3>
+						<span class="posters__link main-link">Read more</span>
+					</a>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__wrapper">
+					<div class="footer__column">
+						<h3 class="footer__column-title">Customer service</h3>
+						<ul class="footer__column-list">
+							<li class="footer__column-item">
+								<a href="#" class="footer__column-link">Phone: +866.597.2742</a>
+							</li>
+							<li class="footer__column-item">
+								<a href="#" class="footer__column-link">Live chat</a>
+							</li>
+							<li class="footer__column-item">
+								<a href="#" class="footer__column-link">About Us</a>
+							</li>
+							<li class="footer__column-item">
+								<a href="#" class="footer__column-link">Terms & Conditions</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer__column">
+						<h3 class="footer__column-title">Company</h3>
+						<ul class="footer__column-list">
+							<li class="footer__column-item">
+								<a href="#" class="footer__column-link">What We Do</a>
+							</li>
+							<li class="footer__column-item">
+								<a href="#" class="footer__column-link">Available Services</a>
+							</li>
+							<li class="footer__column-item">
+								<a href="#" class="footer__column-link">Latest Posts</a>
+							</li>
+							<li class="footer__column-item">
+								<a href="#" class="footer__column-link">FAQs</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer__column">
+						<h3 class="footer__column-title">Our newsletter</h3>
+						<h5 class="footer__column-subtitle">
+							Join our list and get 15% off your first purchase!
+						</h5>
+						<div class="footer__column-subscribe">
+							<input
+								type="email"
+								id="email"
+								name="email"
+								placeholder="Email Address"
+							/>
+							<button type="submit">Subscribe</button>
+						</div>
+						<span>*Don’t worry we don’t spam</span>
+					</div>
+				</div>
+				<!-- wrapper -->
+				<hr />
+				<div class="footer__bottom">
+					<div class="footer__bottom-legal">
+						<a href="#" class="footer__bottom-link">Returns Policy</a>
+						<a href="#" class="footer__bottom-link">Privacy Policy</a>
+					</div>
+					<ul class="footer__bottom-social social">
+						<li>
+							<a href="#"
+								><img
+									src="./img/footer/tw.png"
+									alt="Twitter"
+									aria-label="Go to twitter"
+							/></a>
+						</li>
+						<li>
+							<a href="#"
+								><img
+									src="./img/footer/fb.png"
+									alt="Facebook"
+									aria-label="Go to facebook"
+							/></a>
+						</li>
+						<li>
+							<a href="#"
+								><img
+									src="./img/footer/in.png"
+									alt="Instagram"
+									aria-label="Go to instagram"
+							/></a>
+						</li>
+						<li>
+							<a href="#"
+								><img
+									src="./img/footer/pin.png"
+									alt="Pinterest"
+									aria-label="Go to pinterest"
+							/></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+		<a href="#top" id="back-to-top" class="back-to-top" title="Back to top">
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				width="12"
+				height="21"
+				viewBox="0 0 12 21"
+			>
+				<g>
+					<g>
+						<path
+							d="M11.91 6.367a.996.996 0 0 1-.922.618H7.002v13.004a.998.998 0 1 1-1.993 0V6.985H1.022a1.002 1.002 0 0 1-.705-1.708L5.302.275a.993.993 0 0 1 1.409 0l4.983 5.002c.285.286.37.716.216 1.09zM8.581 4.984L6.005 2.396 3.428 4.984z"
+						/>
+					</g>
+				</g>
+			</svg>
+		</a>
+		<div class="information">
+			<h2 class="information__title"></h2>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,25 @@
+@import '../../main/header/header';
+@import '../../main/header/nav';
+@import '../../main/header/shop';
+
+.header {
+	position: relative;
+	> .container-shared {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding-top: 34px;
+		padding-bottom: 34px;
+		@include xs {
+			padding-top: 15px;
+			padding-bottom: 15px;
+		}
+	}
+
+	&__shop {
+		margin-left: 250px;
+		@include xs {
+			margin-left: 0;
+		}
+	}
+}

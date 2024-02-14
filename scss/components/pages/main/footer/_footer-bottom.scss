@@ -1,0 +1,30 @@
+.footer {
+	// .footer__bottom
+	&__bottom {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 43px 0;
+		border-top: 1px solid #eee;
+
+		// .footer__bottom-link
+		&-link {
+			transition: opacity 0.3s;
+			&:hover {
+				opacity: 0.7;
+			}
+		}
+		// .footer__bottom-legal
+		&-legal {
+			display: flex;
+			align-items: center;
+			gap: 45px;
+		}
+
+		@include xs {
+			flex-direction: column;
+			gap: 30px;
+			padding: 25px 0 43px;
+		}
+	}
+}

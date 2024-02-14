@@ -1,0 +1,10 @@
+@import '../../catalog/header/header';
+
+.header {
+	> .container-shared {
+		@include md-min {
+			padding-top: 30px;
+			padding-bottom: 30px;
+		}
+	}
+}

@@ -1,0 +1,84 @@
+@import '../../../../ui/social';
+
+.footer {
+	// .footer__top
+	&__top {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin-bottom: 57px;
+		padding-top: 43px;
+		border-top: 1px solid #eee;
+		@include md {
+			justify-content: space-around;
+		}
+		@include sm {
+			flex-direction: column;
+			align-items: flex-start;
+			gap: 40px;
+		}
+	}
+	// .footer__column
+	&__column {
+		// .footer__column--select
+		&-select {
+			display: flex;
+			align-items: center;
+			gap: 14px;
+			span {
+				font-size: 13px;
+				color: $color-gray;
+			}
+		}
+		// .footer__column--social
+		&--social {
+			@include sm {
+				order: 2;
+			}
+		}
+		// .footer__column--legal
+		&--legal {
+			display: flex;
+			align-items: center;
+			gap: 45px;
+			margin-left: 200px;
+			a {
+				font-size: 13px;
+				font-weight: 700;
+				color: $color-dark;
+			}
+			@include md {
+				margin-left: 0;
+				gap: 25px;
+			}
+			@include sm {
+				order: 0;
+			}
+		}
+		// .footer__column--dropdown
+		&--dropdown {
+			display: flex;
+			align-items: center;
+			gap: 60px;
+			@include md {
+				flex-direction: column;
+				align-items: flex-end;
+				gap: 15px;
+			}
+			@include sm {
+				order: 3;
+			}
+		}
+	}
+	// .footer__bottom
+	&__bottom {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin-bottom: 20px;
+		@include xs {
+			flex-direction: column;
+			gap: 30px;
+		}
+	}
+}

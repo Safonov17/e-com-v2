@@ -1,0 +1,23 @@
+.banner {
+	position: relative;
+	text-align: center;
+	padding: 15px 0;
+	background-color: #111;
+	color: $color-white;
+	&__title {
+		font-size: 10px;
+		text-transform: uppercase;
+		color: $color-white;
+	}
+	&__close {
+		position: absolute;
+		right: 40px;
+		top: 50%;
+		transform: translateY(-50%);
+		width: 13px;
+		height: 13px;
+		@include xs {
+			right: 20px;
+		}
+	}
+}

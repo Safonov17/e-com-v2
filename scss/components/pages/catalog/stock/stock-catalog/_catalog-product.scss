@@ -1,0 +1,16 @@
+.product {
+	// .product__price
+	&__price {
+		font-size: 13px;
+		line-height: 1.2;
+		font-weight: 700;
+	}
+	// .product__image
+	&__image {
+		margin-bottom: 12px;
+	}
+	// .product__title
+	&__title {
+		margin-bottom: 5px;
+	}
+}

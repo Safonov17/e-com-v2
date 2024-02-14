@@ -1,0 +1,82 @@
+.footer {
+	.custom-select {
+		position: relative;
+		user-select: none;
+
+		&__dropdown {
+			position: absolute;
+			left: 0;
+			top: calc(100% + 2px);
+			display: none;
+			padding: 10px;
+			width: 100%;
+			background-color: $color-white;
+			z-index: 20;
+		}
+
+		&__item {
+			transition: color 0.3s;
+			cursor: pointer;
+			white-space: nowrap;
+
+			&:not(:last-child) {
+				margin-bottom: 10px;
+			}
+
+			&:hover {
+				color: $color-gray;
+				transition: color 0.3s;
+			}
+		}
+
+		&__top {
+			position: relative;
+			font-size: 13px;
+			text-transform: uppercase;
+			padding-right: 15px;
+			cursor: pointer;
+
+			&::after {
+				content: '';
+				position: absolute;
+				right: 0;
+				top: 50%;
+				margin-top: -1px;
+				width: 10px;
+				height: 6px;
+				background-image: url('../img/catalog/angle-down.png');
+				background-position: center;
+				background-size: cover;
+				background-repeat: no-repeat;
+				transform: translateY(-50%);
+			}
+		}
+
+		&--open {
+			.custom-select__top {
+				&::after {
+					transform: translateY(-50%) rotate(180deg);
+				}
+			}
+
+			.custom-select__dropdown {
+				display: block;
+			}
+		}
+
+		&--footer {
+			min-width: auto;
+
+			.custom-select__top {
+				border-bottom: none;
+				padding-right: 15px;
+				padding-bottom: 0;
+				font-size: 13px;
+
+				&::after {
+					margin-top: 0;
+				}
+			}
+		}
+	}
+}

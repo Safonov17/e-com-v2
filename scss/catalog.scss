@@ -1,0 +1,31 @@
+@import './base/vars';
+@import './base/fonts';
+@import './base/reset';
+@import './mixins/breakpoints';
+@import './base/base';
+
+// ui
+@import './ui/checkbox';
+@import './ui/burger-menu';
+
+// Catalog components
+@import './components/pages/catalog/header/banner';
+@import './components/pages/catalog/header/header';
+
+@import './components/pages/catalog/hero/hero';
+@import './components/pages/catalog/hero/catalog-slide.scss';
+
+@import './components/pages/catalog/breadcrumbs/breadcrumbs';
+
+@import './components/pages/catalog/stock/stock';
+@import './components/pages/catalog/stock/stock-filter/filter';
+@import './components/pages/catalog/stock/stock-filter/filter-tab';
+@import './components/pages/catalog/stock/stock-catalog/catalog-header';
+@import './components/pages/catalog/stock/stock-catalog/catalog-custom-select';
+@import './components/pages/catalog/stock/stock-catalog/catalog-filters';
+@import './components/pages/catalog/stock/stock-catalog/catalog-grid';
+@import './components/pages/catalog/stock/stock-catalog/catalog-product';
+@import './components/pages/catalog/stock/stock-catalog/catalog-pagination';
+
+@import './components/pages/catalog/footer/footer';
+@import './components/pages/catalog/footer/custom-select';

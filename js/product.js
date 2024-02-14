@@ -1,0 +1,11 @@
+import './components/product/gallery.js'
+import './components/product/color.js'
+import './components/product/size.js'
+import './components/product/stepper.js'
+import './components/product/tabs.js'
+import './components/product/show-related-products.js'
+import './components/product/related-slider.js'
+import './components/catalog/select.js'
+import './ui/burger.js'
+import './ui/to-top.js'
+import './ui/empty-links.js' // удалить

@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Zonex - Catalog</title>
+		<link rel="icon" href="favicon.ico" />
+		<!-- Preload fonts -->
+		<link
+			as="style"
+			rel="stylesheet preload prefetch"
+			href="./fonts/Jost-Medium.woff2"
+			crossorigin="anonymous"
+		/>
+		<link
+			as="style"
+			rel="stylesheet preload prefetch"
+			href="./fonts/Jost-Bold.woff2"
+			crossorigin="anonymous"
+		/>
+		<!-- Styles -->
+		<link rel="stylesheet" href="css/swiper.boundle.min.css" />
+		<link rel="stylesheet" href="css/normalize.css" />
+		<link rel="stylesheet" href="css/catalog.css" />
+		<!-- Scripts -->
+		<script src="./js/libs/swiper.boundle.min.js" defer></script>
+		<script src="./js/catalog.js" defer type="module"></script>
+	</head>
+
+	<body>
+		<div class="banner">
+			<h3 class="banner__title">Free delivery from $60 and free returns</h3>
+			<button class="banner__close">
+				<img class="banner__close-img" src="./img/catalog/close-white.png" />
+			</button>
+		</div>
+		<header class="header">
+			<div class="container-shared">
+				<button class="burger header__burger">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+						<path
+							d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
+						/>
+					</svg>
+				</button>
+				<nav class="nav header__nav">
+					<button class="nav__close-btn">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+							<path
+								d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"
+							/>
+						</svg>
+					</button>
+					<ul class="nav__list">
+						<li class="nav__item">
+							<a href="index.html" class="main-link nav__link">Home</a>
+						</li>
+						<li class="nav__item">
+							<a href="catalog.html" class="main-link nav__link--current"
+								>Shop</a
+							>
+						</li>
+						<li class="nav__item">
+							<a class="main-link nav__link nav__link">Elements</a>
+						</li>
+						<li class="nav__item">
+							<a href="#" class="main-link nav__link">Blog</a>
+						</li>
+						<li class="nav__item">
+							<a href="#" class="main-link nav__link">Page</a>
+						</li>
+					</ul>
+				</nav>
+				<a href="index.html" class="header__logo" aria-label="logo">
+					<img src="./img/header/logo.png" alt="Logo" />
+				</a>
+				<ul class="shop header__shop">
+					<li class="shop__item">
+						<form class="shop__search-form search-form">
+							<button class="search-form__btn" aria-label="search">
+								<img src="./img/header/search.png" alt="search" />
+							</button>
+						</form>
+					</li>
+					<li class="shop__item">
+						<a href="#" class="shop__link" aria-label="go to log in">
+							<img src="./img/header/user.png" alt="User" />
+						</a>
+					</li>
+					<li class="shop__item">
+						<a href="#" class="shop__link cart" aria-label="go to cart">
+							<img src="./img/header/cart.png" alt="Cart" />
+						</a>
+						<span class="shop__quantity">3</span>
+					</li>
+				</ul>
+			</div>
+		</header>
+		<main>
+			<section class="hero">
+				<div class="container-shared">
+					<div class="hero__slider">
+						<button class="hero__btn hero__btn-prev">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								class="icon icon-tabler icon-tabler-arrow-narrow-left"
+								width="44"
+								height="44"
+								viewBox="0 0 24 24"
+								stroke-width="1.5"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+							>
+								<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+								<path d="M5 12l14 0" />
+								<path d="M5 12l4 4" />
+								<path d="M5 12l4 -4" />
+							</svg>
+						</button>
+						<button class="hero__btn hero__btn-next">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								class="icon icon-tabler icon-tabler-arrow-narrow-right"
+								width="44"
+								height="44"
+								viewBox="0 0 24 24"
+								stroke-width="1.5"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+							>
+								<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+								<path d="M5 12l14 0" />
+								<path d="M15 16l4 -4" />
+								<path d="M15 8l4 4" />
+							</svg>
+						</button>
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<div class="catalog-slide">
+									<h2 class="catalog-slide__title">
+										The best thing about going back to school?
+									</h2>
+									<p class="catalog-slide__descr">
+										This fall denim is king! Denim is officially back in and
+										cool to wear in all its many forms
+									</p>
+									<div class="catalog-slide__links">
+										<a href="#" class="catalog-slide__link">Discovery</a>
+										<a href="#" class="catalog-slide__link">Shop now</a>
+									</div>
+									<img
+										class="catalog-slide__image"
+										src="./img/catalog/girl-banner.png"
+										alt="Girl on banner"
+									/>
+								</div>
+								<!-- /.catalog__slide -->
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- /.hero -->
+			<section class="breadcrumbs">
+				<div class="container-shared">
+					<nav class="breadcrumbs__nav">
+						<ul class="breadcrumbs__list">
+							<li class="breadcrumbs__item">
+								<a href="#" class="breadcrumbs__link">Home</a>
+							</li>
+							<li class="breadcrumbs__item">
+								<a href="#" class="breadcrumbs__link">Shop</a>
+							</li>
+							<li class="breadcrumbs__item">
+								<a href="#" class="breadcrumbs__link breadcrumbs__link-current"
+									>New Arrivals</a
+								>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</section>
+			<!-- /.breadcrumbs -->
+			<section class="stock">
+				<div class="container-shared">
+					<div class="stock__wrapper">
+						<div class="filter">
+							<div class="filter__header">
+								<button class="filter__header-btn">Hide Filters</button>
+								<button class="filter__header-btn--close">
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>
+								</button>
+							</div>
+							<div class="filter__wrapper">
+								<div class="filter__tab filter__tab--open">
+									<div class="filter__tab-header">
+										<div class="filter__tab-caption">
+											<h3 class="filter__tab-title" data-tab="Categories">
+												Categories
+											</h3>
+											<span class="filter__tab-counter">0</span>
+										</div>
+										<span class="filter__tab-switch"></span>
+									</div>
+									<div class="filter__tab-main">
+										<ul class="filter__tab-list">
+											<li class="filter__item">
+												<label
+													class="custom-checkbox"
+													data-text="All categories"
+												>
+													<input
+														type="checkbox"
+														class="custom-checkbox__input visually-hidden"
+													/>
+													<span class="custom-checkbox__text"
+														>All categories</span
+													>
+												</label>
+											</li>
+											<li class="filter__item">
+												<label class="custom-checkbox" data-text="Accessories">
+													<input
+														type="checkbox"
+														class="custom-checkbox__input visually-hidden"
+													/>
+													<span class="custom-checkbox__text">Accessories</span>
+												</label>
+											</li>
+											<li class="filter__item">
+												<label class="custom-checkbox" data-text="Dresses">
+													<input
+														type="checkbox"
+														class="custom-checkbox__input visually-hidden"
+													/>
+													<span class="custom-checkbox__text">Dresses</span>
+												</label>
+											</li>
+											<li class="filter__item">
+												<label class="custom-checkbox" data-text="Coats">
+													<input
+														type="checkbox"
+														class="custom-checkbox__input visually-hidden"
+													/>
+													<span class="custom-checkbox__text">Coats</span>
+												</label>
+											</li>
+											<li class="filter__item">
+												<label class="custom-checkbox" data-text="Clothes">
+													<input
+														type="checkbox"
+														class="custom-checkbox__input visually-hidden"
+													/>
+													<span class="custom-checkbox__text">Clothes</span>
+												</label>
+											</li>
+											<li class="filter__item">
+												<label class="custom-checkbox" data-text="T-Shirt">
+													<input
+														type="checkbox"
+														class="custom-checkbox__input visually-hidden"
+													/>
+													<span class="custom-checkbox__text">T-Shirt</span>
+												</label>
+											</li>
+											<li class="filter__item">
+												<label class="custom-checkbox" data-text="Summer">
+													<input
+														type="checkbox"
+														class="custom-checkbox__input visually-hidden"
+													/>
+													<span class="custom-checkbox__text">Summer</span>
+												</label>
+											</li>
+											<li class="filter__item">
+												<label class="custom-checkbox" data-text="Shirts">
+													<input
+														type="checkbox"
+														class="custom-checkbox__input visually-hidden"
+													/>
+													<span class="custom-checkbox__text">Shirts</span>
+												</label>
+											</li>
+											<li class="filter__item">
+												<label class="custom-checkbox" data-text="Jacket">
+													<input
+														type="checkbox"
+														class="custom-checkbox__input visually-hidden"
+													/>
+													<span class="custom-checkbox__text">Jacket</span>
+												</label>
+											</li>
+											<li class="filter__item">
+												<label class="custom-checkbox" data-text="Short">
+													<input
+														type="checkbox"
+														class="custom-checkbox__input visually-hidden"
+													/>
+													<span class="custom-checkbox__text">Short</span>
+												</label>
+											</li>
+										</ul>
+										<!-- Список 1 -->
+									</div>
+								</div>
+								<!-- /.filter__tab 1 -->
+								<div class="filter__tab">
+									<div class="filter__tab-header">
+										<div class="filter__tab-caption">
+											<h3 class="filter__tab-title" data-tab="Color">Color</h3>
+											<span class="filter__tab-counter">0</span>
+										</div>
+										<span class="filter__tab-switch"></span>
+									</div>
+									<div class="filter__tab-main">
+										<ul class="filter__tab-list">
+											<li class="filter__item">
+												<label
+													class="custom-checkbox"
+													data-text="All categories"
+												>
+													<input
+														type="checkbox"
+														class="custom-checkbox__input visually-hidden"
+													/>
+													<span class="custom-checkbox__text"
+														>All categories</span
+													>
+												</label>
+											</li>
+											<li class="filter__item">
+												<label class="custom-checkbox" data-text="Accessories">
+													<input
+														type="checkbox"
+														class="custom-checkbox__input visually-hidden"
+													/>
+													<span class="custom-checkbox__text">Accessories</span>
+												</label>
+											</li>
+											<li class="filter__item">
+												<label class="custom-checkbox" data-text="Dresses">
+													<input
+														type="checkbox"
+														class="custom-checkbox__input visually-hidden"
+													/>
+													<span class="custom-checkbox__text">Dresses</span>
+												</label>
+											</li>
+											<li class="filter__item">
+												<label class="custom-checkbox" data-text="Coats">
+													<input
+														type="checkbox"
+														class="custom-checkbox__input visually-hidden"
+													/>
+													<span class="custom-checkbox__text">Coats</span>
+												</label>
+											</li>
+											<li class="filter__item">
+												<label class="custom-checkbox" data-text="Clothes">
+													<input
+														type="checkbox"
+														class="custom-checkbox__input visually-hidden"
+													/>
+													<span class="custom-checkbox__text">Clothes</span>
+												</label>
+											</li>
+											<li class="filter__item">
+												<label class="custom-checkbox" data-text="T-Shirt">
+													<input
+														type="checkbox"
+														class="custom-checkbox__input visually-hidden"
+													/>
+													<span class="custom-checkbox__text">T-Shirt</span>
+												</label>
+											</li>
+											<li class="filter__item">
+												<label class="custom-checkbox" data-text="Summer">
+													<input
+														type="checkbox"
+														class="custom-checkbox__input visually-hidden"
+													/>
+													<span class="custom-checkbox__text">Summer</span>
+												</label>
+											</li>
+											<li class="filter__item">
+												<label class="custom-checkbox" data-text="Shirts">
+													<input
+														type="checkbox"
+														class="custom-checkbox__input visually-hidden"
+													/>
+													<span class="custom-checkbox__text">Shirts</span>
+												</label>
+											</li>
+											<li class="filter__item">
+												<label class="custom-checkbox" data-text="Jacket">
+													<input
+														type="checkbox"
+														class="custom-checkbox__input visually-hidden"
+													/>
+													<span class="custom-checkbox__text">Jacket</span>
+												</label>
+											</li>
+											<li class="filter__item">
+												<label class="custom-checkbox" data-text="Short">
+													<input
+														type="checkbox"
+														class="custom-checkbox__input visually-hidden"
+													/>
+													<span class="custom-checkbox__text">Short</span>
+												</label>
+											</li>
+										</ul>
+										<!-- Список 1 -->
+									</div>
+								</div>
+								<!-- /.filter__tab 2 -->
+							</div>
+						</div>
+						<div class="catalog">
+							<div class="catalog__header">
+								<button class="catalog__header-filter--btn">
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+										<path
+											d="M3.9 54.9C10.5 40.9 24.5 32 40 32H472c15.5 0 29.5 8.9 36.1 22.9s4.6 30.5-5.2 42.5L320 320.9V448c0 12.1-6.8 23.2-17.7 28.6s-23.8 4.3-33.5-3l-64-48c-8.1-6-12.8-15.5-12.8-25.6V320.9L9 97.3C-.7 85.4-2.8 68.8 3.9 54.9z"
+										/>
+									</svg>
+									<span>Filters</span>
+								</button>
+								<div class="catalog__header-columns catalog__columns">
+									<h4 class="catalog__columns-title">Column number:</h4>
+									<ul class="catalog__columns-list">
+										<li class="catalog__columns-item">
+											<button
+												class="catalog__columns-btn main-link"
+												data-columns="3"
+											>
+												3
+											</button>
+										</li>
+										<li class="catalog__columns-item">
+											<button
+												class="catalog__columns-btn catalog__columns-btn--current main-link"
+												data-columns="4"
+											>
+												4
+											</button>
+										</li>
+										<li class="catalog__columns-item">
+											<button
+												class="catalog__columns-btn main-link"
+												data-columns="5"
+											>
+												5
+											</button>
+										</li>
+									</ul>
+								</div>
+								<div class="custom-select">
+									<div class="custom-select__top">Sort by latest</div>
+									<div class="custom-select__dropdown">
+										<ul class="custom-select__list">
+											<li class="custom-select__item">Sort by latest</li>
+											<li class="custom-select__item">Sort by price</li>
+											<li class="custom-select__item">Sort by new</li>
+											<li class="custom-select__item">Sort by bestsellers</li>
+											<li class="custom-select__item">Sort by hot</li>
+											<li class="custom-select__item">
+												Sort by only a few left
+											</li>
+											<li class="custom-select__item">Sort by top rate</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<!-- /.catalog__header -->
+							<div class="catalog__filters">
+								<button class="catalog__filters-clear main-link">
+									Clear all
+								</button>
+							</div>
+							<!-- /.catalog__filters -->
+							<ul class="catalog__grid" data-grid-columns="4"></ul>
+							<!-- /.catalog__grid -->
+							<ul class="catalog__pagination">
+								<li class="catalog__pagination-item">
+									<button class="catalog__pagination-btn current">1</button>
+								</li>
+								<li class="catalog__pagination">
+									<button class="catalog__pagination-btn">2</button>
+								</li>
+								<li class="catalog__pagination">
+									<button class="catalog__pagination-btn">3</button>
+								</li>
+								<li class="catalog__pagination">
+									<button
+										class="catalog__pagination-btn catalog__pagination-btn--next"
+									>
+										Next
+										<svg
+											version="1.1"
+											id="Capa_1"
+											xmlns="http://www.w3.org/2000/svg"
+											xmlns:xlink="http://www.w3.org/1999/xlink"
+											x="0px"
+											y="0px"
+											width="284.935px"
+											height="284.936px"
+											viewBox="0 0 284.935 284.936"
+											style="enable-background: new 0 0 284.935 284.936"
+											xml:space="preserve"
+										>
+											<g>
+												<path
+													d="M222.701,135.9L89.652,2.857C87.748,0.955,85.557,0,83.084,0c-2.474,0-4.664,0.955-6.567,2.857L62.244,17.133
+		c-1.906,1.903-2.855,4.089-2.855,6.567c0,2.478,0.949,4.664,2.855,6.567l112.204,112.204L62.244,254.677
+		c-1.906,1.903-2.855,4.093-2.855,6.564c0,2.477,0.949,4.667,2.855,6.57l14.274,14.271c1.903,1.905,4.093,2.854,6.567,2.854
+		c2.473,0,4.663-0.951,6.567-2.854l133.042-133.044c1.902-1.902,2.854-4.093,2.854-6.567S224.603,137.807,222.701,135.9z"
+												/>
+											</g>
+											<g></g>
+											<g></g>
+											<g></g>
+											<g></g>
+											<g></g>
+											<g></g>
+											<g></g>
+											<g></g>
+											<g></g>
+											<g></g>
+											<g></g>
+											<g></g>
+											<g></g>
+											<g></g>
+											<g></g>
+										</svg>
+									</button>
+								</li>
+							</ul>
+							<!-- /.catalog__pagination -->
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- /.stock -->
+		</main>
+		<footer class="footer">
+			<div class="container-shared">
+				<div class="footer__top">
+					<div class="footer__column footer__column--social">
+						<ul class="footer__social social">
+							<li>
+								<a href="#"
+									><img
+										src="./img/footer/tw.png"
+										alt="Twitter"
+										aria-label="Go to twitter"
+								/></a>
+							</li>
+							<li>
+								<a href="#"
+									><img
+										src="./img/footer/fb.png"
+										alt="Facebook"
+										aria-label="Go to facebook"
+								/></a>
+							</li>
+							<li>
+								<a href="#"
+									><img
+										src="./img/footer/in.png"
+										alt="Instagram"
+										aria-label="Go to instagram"
+								/></a>
+							</li>
+							<li>
+								<a href="#"
+									><img
+										src="./img/footer/pin.png"
+										alt="Pinterest"
+										aria-label="Go to pinterest"
+								/></a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer__column footer__column--legal">
+						<a href="#" class="legal-link">Returns Policy</a>
+						<a href="#" class="legal-link">Privacy Policy</a>
+						<a href="#" class="legal-link">Privacy Policy</a>
+					</div>
+					<div class="footer__column footer__column--dropdown">
+						<div class="footer__column-select">
+							<span>Currency</span>
+							<div class="custom-select">
+								<div class="custom-select__top">USD</div>
+								<div class="custom-select__dropdown">
+									<ul class="custom-select__list">
+										<li class="custom-select__item">USD</li>
+										<li class="custom-select__item">EUR</li>
+										<li class="custom-select__item">RUB</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="footer__column-select">
+							<span>Language</span>
+							<div class="custom-select">
+								<div class="custom-select__top">English</div>
+								<div class="custom-select__dropdown">
+									<ul class="custom-select__list">
+										<li class="custom-select__item">English</li>
+										<li class="custom-select__item">Italian</li>
+										<li class="custom-select__item">Russian</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer__bottom">
+					<h3 class="footer__bottom-copyright">
+						©2019 Zonex All rights reserved
+					</h3>
+					<img
+						class="footer__bottom-pay"
+						src="img/catalog/payment.png"
+						alt="Payment"
+					/>
+				</div>
+			</div>
+		</footer>
+		<a href="#top" id="back-to-top" class="back-to-top" title="Back to top">
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				width="12"
+				height="21"
+				viewBox="0 0 12 21"
+			>
+				<g>
+					<g>
+						<path
+							d="M11.91 6.367a.996.996 0 0 1-.922.618H7.002v13.004a.998.998 0 1 1-1.993 0V6.985H1.022a1.002 1.002 0 0 1-.705-1.708L5.302.275a.993.993 0 0 1 1.409 0l4.983 5.002c.285.286.37.716.216 1.09zM8.581 4.984L6.005 2.396 3.428 4.984z"
+						/>
+					</g>
+				</g>
+			</svg>
+		</a>
+	</body>
+</html>

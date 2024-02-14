@@ -1,0 +1,35 @@
+@import '../../../main/products/product-item';
+
+.catalog {
+	// .catalog__grid
+	&__grid[data-grid-columns='3'] {
+		grid-template-columns: repeat(3, 31.2%);
+	}
+	&__grid[data-grid-columns='4'] {
+		grid-template-columns: repeat(4, 22.6%);
+		@include md {
+			grid-template-columns: repeat(3, 1fr);
+		}
+		@include md-min {
+			grid-template-columns: repeat(2, 1fr);
+		}
+	}
+	&__grid[data-grid-columns='5'] {
+		grid-template-columns: repeat(5, 17.5%);
+	}
+	&__grid {
+		display: grid;
+		max-width: 986px;
+		margin-bottom: 73px;
+		column-gap: 30px;
+		row-gap: 58px;
+		@include md {
+			row-gap: 40px;
+			margin-bottom: 43px;
+		}
+		@include xs {
+			column-gap: 15px;
+			row-gap: 30px;
+		}
+	}
+}
